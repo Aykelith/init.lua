@@ -3,14 +3,14 @@ return require('packer').startup(function(use)
     use({ "moll/vim-bbye", event = 'VimEnter' })
     use({ 'kyazdani42/nvim-web-devicons' })                                              -- icons
     use({                                                                                -- file explorer
-        'kyazdani42/nvim-tree.lua', 
+        'kyazdani42/nvim-tree.lua',
         event = 'VimEnter',
         requires = {{ 'kyazdani42/nvim-web-devicons' }},
         config = function()
             require('plugins_settings.nvim-tree')
         end,
-    })                            
-    use({ 'folke/tokyonight.nvim' })                                                     -- theme
+    })
+    use({ 'sainnhe/sonokai' })                                                     -- theme
     use({                                                                                -- status bar
         'nvim-lualine/lualine.nvim',
         event = 'VimEnter',

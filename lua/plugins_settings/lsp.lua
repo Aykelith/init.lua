@@ -3,8 +3,12 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'tsserver',
-  'rust_analyzer',
+  'tsserver', -- TypeScript
+  'rust_analyzer', -- Rust
+  'gopls', -- Go
+  'lua_ls', -- Lua
+  'clangd', -- C++
+  'cmake', -- CMake
 })
 
 -- Fix Undefined global 'vim'
